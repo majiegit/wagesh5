@@ -1,0 +1,24 @@
+import { createApp } from 'vue';
+import App from './App.vue';
+import { router } from './router';
+import { Button } from 'vant';
+import { NavBar } from 'vant';
+import { Tab, Tabs } from 'vant';
+import { DatetimePicker } from 'vant';
+import { Calendar } from 'vant';
+import { List } from 'vant';
+import { Dialog } from 'vant';
+import { Collapse, CollapseItem } from 'vant';
+const app = createApp(App);
+app.use(router);
+app.use(Button);
+app.use(NavBar)
+app.use(Tab);
+app.use(Tabs);
+app.use(DatetimePicker);
+app.use(Calendar);
+app.use(List);
+app.use(Dialog);
+app.use(Collapse);
+app.use(CollapseItem);
+app.mount('#app');
